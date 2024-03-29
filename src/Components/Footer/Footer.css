@@ -1,0 +1,38 @@
+.footer {
+   display: flex;
+   background-color: grey;
+   color: white;
+   font-weight: 200;
+   flex-shrink: 0;
+   justify-content: space-evenly;
+   padding: 20px;
+   align-items: center;
+ }
+ 
+ .footer p {
+   margin: 10px;
+ }
+ 
+ .footer a {
+   text-decoration: none;
+   color: white;
+   margin: 5px;
+ }
+ 
+ .iconsfooter {
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .iconsfooter img {
+   height: 30px;
+   width: 30px;
+   margin-left: 5px;
+ }
+ 
+ .logofooter {
+   height: 30px;
+   width: 30px;
+ }
+ 

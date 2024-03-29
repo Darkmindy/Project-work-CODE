@@ -1,0 +1,53 @@
+.cart-drawer {
+    background-color: grey;
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: -200px;
+    top: 80px;
+    bottom: 0;
+    z-index: 1000; /* Ensure the drawer is above other content */
+    transition: right 0.3s ease-in-out; /* Specify only the property being transitioned */
+}
+
+.cart-drawer.open {
+    right: 0;
+}
+
+.cart-drawer-content {
+    width: 100%; /* Adjusted width for better responsiveness */
+    max-width: 400px; /* Added max-width for larger screens */
+    height: 100%;
+    background-color: #fff; /* Changed to hex color for consistency */
+    display: flex;
+    flex-direction: column; /* Adjusted to column for better layout */
+    align-items: center; /* Center content horizontally */
+    position: relative;
+    overflow-y: auto; /* Applied overflow-y for scrollbars */
+}
+
+.cart-drawer-content:hover {
+    overflow-y: auto; /* Ensure scrollbars appear on hover */
+}
+
+.card-drawer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-inside {
+    display: flex;
+    align-items: center;
+}
+
+.card-inside img {
+    width: 150px; /* Adjusted width for better visibility */
+    height: auto; /* Added height auto to maintain aspect ratio */
+    margin-right: 10px;
+}
