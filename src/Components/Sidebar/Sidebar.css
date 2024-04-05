@@ -5,39 +5,23 @@
     align-items: center;
     height: 100%;
     background-color: #f5f5f5;
-<<<<<<< HEAD
-    padding: 20px; /* Aggiungi un po' di spazio intorno al contenuto */
-}
-
-.ul-des {
-    color: black;
-    text-decoration: none;
-    margin: 10px 0; /* Aggiungi spazio tra i link */
-}
-=======
     padding: 30px 0px 20px 0;
-} 
-
+}
 
 .icon {
-   height: 30px;
-   width: 30px;
-   
+    height: 30px;
+    width: 30px;
 }
 
-
-.linktext{
+.linktext {
     color: black;
     font-size: 15px;
     font-weight: 200;
     margin: 5px;
-    
 }
 
-.btn-light{
+.btn-light {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    
 }
->>>>>>> 1765c9ea1d39e22671efafdf39b9350750fa4bb7
