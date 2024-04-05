@@ -1,6 +1,31 @@
-.login-form {
-  width: 100%;
-  max-width: 400px;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #f2f3ff;
+  font-family: "Euclid Circular A";
+  color: #1b1e40;
+  animation: rotate 5s infinite alternate linear;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.login-card {
+  width: 400px;
   padding: 60px 30px 32px;
   border-radius: 1.25rem;
   background: #ffffff;
@@ -8,19 +33,24 @@
   transition: 0.4s;
 }
 
-.login-form > h2 {
+.login-card > h2 {
   font-size: 36px;
   font-weight: 600;
   margin: 0 0 30px;
 }
 
-.login-form img {
+.login-card img {
   width: 260px;
-  height: 260px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
 }
 
 .login-form input.control::placeholder {
@@ -37,6 +67,8 @@
   color: inherit;
   border-radius: 6px;
   margin: 8px 0;
+  font-family: inherit;
+  text-align: left;
   font-size: 18px;
   transition: 0.4s;
 }
@@ -49,14 +81,17 @@ button.control {
   background: #454a8f;
   color: #f7f7f7;
   border: 0;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
   letter-spacing: 2px;
   transition: all 0.375s;
 }
 
 .bars {
   margin: 8px 0;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -69,6 +104,7 @@ button.control {
   height: 6px;
   border-radius: 3px;
   transition: 0.4s;
+  width: 0%;
 }
 
 .bars.weak div {

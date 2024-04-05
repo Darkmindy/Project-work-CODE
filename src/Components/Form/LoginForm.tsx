@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import Checkbox from "../Checkbox/Checkbox";
+import logo from "./logo.svg";
 import "./LoginForm.css";
 
 const strengthLabels = ["weak", "medium", "strong"];
@@ -60,7 +61,8 @@ const LoginForm: FC = () => {
   };
 
   return (
-    <div>
+    <div className="login-card">
+      <img src={logo} />
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <div className="username">
