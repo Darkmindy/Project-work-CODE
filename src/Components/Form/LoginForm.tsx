@@ -90,7 +90,12 @@ const LoginForm: FC = () => {
         </div>
         <div className="strength">{strength && <>{strength} password</>}</div>
         <Checkbox name="check" type="checkbox" label="Admin" />
-        <Button type="submit" label="Login" />
+        <br></br>
+        <Button
+          type="submit"
+          className="btn btn-outline-primary"
+          label="Login"
+        />
       </form>
     </div>
   );
