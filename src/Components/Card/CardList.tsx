@@ -24,11 +24,7 @@ const CardList: React.FC = () => {
 
     fetchData();
   }, []);
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 1765c9ea1d39e22671efafdf39b9350750fa4bb7
   return (
     <div className="card-list">
       {cards.map((pokemon: Pokemon) => (
