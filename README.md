@@ -1,10 +1,5 @@
 # Project work Code
-
-Il progetto è un e-commerce al quale hanno partecipato:
-
-@darkmindy
-@valeny91
-@VincenzoMagnano
+Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso contributo a questo progetto.
 
 # Features
 - Lista prodotti (carte pkmn)
