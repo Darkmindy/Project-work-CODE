@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import Checkbox from "../Checkbox/Checkbox";
-import logo from "./logo.svg";
 import "./LoginForm.css";
 
 const strengthLabels = ["weak", "medium", "strong"];
@@ -13,10 +12,7 @@ const LoginForm: FC = () => {
   const [strength, setStrength] = useState("");
 
   const getStrength = (password: string) => {
-    console.log(password);
-
-    let strengthIndicator: number = -1;
-
+    let strengthIndicator: number = 0;
     let upper = false,
       lower = false,
       numbers = false;
@@ -39,7 +35,7 @@ const LoginForm: FC = () => {
       }
     }
 
-    setStrength(strengthLabels[strengthIndicator] ?? "");
+    setStrength(strengthLabels[strengthIndicator] || "");
   };
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
@@ -62,7 +58,7 @@ const LoginForm: FC = () => {
 
   return (
     <div className="login-card">
-      <img src={logo} />
+      <img src="/images/Pikachu.png" alt="Logo" />
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <div className="username">
