@@ -24,6 +24,7 @@ const CardList: React.FC = () => {
 
     fetchData();
   }, []);
+
   return (
     <div className="card-list">
       {cards.map((pokemon: Pokemon) => (
