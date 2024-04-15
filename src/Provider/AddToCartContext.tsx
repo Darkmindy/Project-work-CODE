@@ -12,8 +12,7 @@ interface AddToCartContextType {
   addToCart: (pokemon: Pokemon) => void;
   removeFromCart: (index: number) => void;
   handleCheckout: () => void;
-  hystoryCart: number[];
-
+  historyCart: number[]; // Corretto da 'hystoryCart' a 'historyCart'
 }
 
 const AddToCartContext = createContext<AddToCartContextType | undefined>(
@@ -34,37 +33,32 @@ interface AddToCartProviderProps {
 
 export const AddToCartProvider: FC<AddToCartProviderProps> = ({ children }) => {
   const [cart, setCart] = useState<Pokemon[]>([]);
-  const [hystoryCart, setHystoryCart] = useState<number[]>([]);
+  const [historyCart, setHistoryCart] = useState<number[]>([]); // Corretto da 'hystoryCart' a 'historyCart'
+
   const addToCart = (pokemon: Pokemon) => {
     setCart((prevCart) => [...prevCart, pokemon]);
   };
-
-<<<<<<< HEAD
-  const removeFromCart = (index: number) => {
-    setCart((prevCart) => prevCart.filter((_, i) => i !== index));
-  };
-=======
 
   const removeFromCart = (index: number) => {
     const newCart = cart.filter((_, i) => i !== index);
     setCart(newCart);
   };
 
-
   const handleCheckout = () => {
     setCart([]);
 
     if (cart.length > 0) {
-      setHystoryCart(prevHistory => [...prevHistory, cart.length]);
+      setHistoryCart((prevHistory) => [...prevHistory, cart.length]);
       setCart([]);
     }
   };
 
-
->>>>>>> 1765c9ea1d39e22671efafdf39b9350750fa4bb7
-
   return (
-    <AddToCartContext.Provider value={{ cart, addToCart, removeFromCart, handleCheckout, hystoryCart }}>
+    <AddToCartContext.Provider
+      value={{ cart, addToCart, removeFromCart, handleCheckout, historyCart }}
+    >
+      {" "}
+      {/* Corretto da 'hystoryCart' a 'historyCart' */}
       {children}
     </AddToCartContext.Provider>
   );
