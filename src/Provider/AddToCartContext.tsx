@@ -11,9 +11,8 @@ interface AddToCartContextType {
   cart: Pokemon[];
   addToCart: (pokemon: Pokemon) => void;
   removeFromCart: (index: number) => void;
-  handleCheckout: () => void;
-  hystoryCart: number[];
-
+  handleCheckout: () => void; // Aggiunto handleCheckout nell'interfaccia
+  historyCart: number[]; // Corretto il nome della variabile historyCart
 }
 
 const AddToCartContext = createContext<AddToCartContextType | undefined>(
@@ -34,37 +33,27 @@ interface AddToCartProviderProps {
 
 export const AddToCartProvider: FC<AddToCartProviderProps> = ({ children }) => {
   const [cart, setCart] = useState<Pokemon[]>([]);
-  const [hystoryCart, setHystoryCart] = useState<number[]>([]);
+  const [historyCart, setHistoryCart] = useState<number[]>([]); // Corretto il nome della variabile historyCart
+
   const addToCart = (pokemon: Pokemon) => {
     setCart((prevCart) => [...prevCart, pokemon]);
   };
 
-<<<<<<< HEAD
   const removeFromCart = (index: number) => {
     setCart((prevCart) => prevCart.filter((_, i) => i !== index));
   };
-=======
-
-  const removeFromCart = (index: number) => {
-    const newCart = cart.filter((_, i) => i !== index);
-    setCart(newCart);
-  };
-
 
   const handleCheckout = () => {
+    // Implementazione della funzione handleCheckout
+    // Esempio di implementazione:
+    setHistoryCart((prevHistory) => [...prevHistory, cart.length]);
     setCart([]);
-
-    if (cart.length > 0) {
-      setHystoryCart(prevHistory => [...prevHistory, cart.length]);
-      setCart([]);
-    }
   };
 
-
->>>>>>> 1765c9ea1d39e22671efafdf39b9350750fa4bb7
-
   return (
-    <AddToCartContext.Provider value={{ cart, addToCart, removeFromCart, handleCheckout, hystoryCart }}>
+    <AddToCartContext.Provider
+      value={{ cart, addToCart, removeFromCart, handleCheckout, historyCart }}
+    >
       {children}
     </AddToCartContext.Provider>
   );
