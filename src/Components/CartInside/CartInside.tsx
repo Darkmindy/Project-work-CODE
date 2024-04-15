@@ -82,35 +82,18 @@ const CartInside = () => {
             ))}
           </tbody>
         </table>
-        <div
-          className="border mx-3 d-flex flex-column  justify-content-center"
-          style={{ width: "600px", height: "300px" }}
-        >
-          <div className="border d-flex justify-content-start p-5">
-            <h2
-              className="text-center m-2"
-              style={{ fontSize: "20px", fontWeight: "bold" }}
-            >
-              Riepilogo
-            </h2>
+        <div className='border mx-3 d-flex flex-column  justify-content-center' style={{ width: '600px', height: '300px' }}>
+          <div className='border d-flex justify-content-start p-5'>
+            <h2 className='text-center m-2' style={{ fontSize: '20px', fontWeight: 'bold' }}>Riepilogo</h2>
           </div>
           <div>
-            <h2
-              className="text-center border rounded bg-body-tertiary p-2"
-              style={{ fontSize: "24px", fontWeight: "bold" }}
-            >
-              Totale:{cart.length}€{" "}
-            </h2>
+            <h2 className='text-center border rounded bg-body-tertiary p-2' style={{ fontSize: '24px', fontWeight: 'bold' }}>Totale:{cart.length}€ </h2>
           </div>
-          <button onClick={handleCheckout} className="btn btn-primary">
-            Checkout
-          </button>
+          <button onClick={handleCheckout} className='btn btn-primary'>Checkout</button>
           <div>
             {historyCart.map((item: any, index: number) => (
               <div key={index} onClick={() => handleHistoryItemClick(index)}>
-                Hai fatto un acquisto di - {item}€ il{" "}
-                {new Date().toLocaleDateString()} alle ore{" "}
-                {new Date().toLocaleTimeString()}
+                Hai fatto un acquisto di - {item}€ il {new Date().toLocaleDateString()} alle ore {new Date().toLocaleTimeString()}
               </div>
             ))}
           </div>

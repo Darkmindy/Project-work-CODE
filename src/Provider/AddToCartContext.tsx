@@ -54,11 +54,7 @@ export const AddToCartProvider: FC<AddToCartProviderProps> = ({ children }) => {
   };
 
   return (
-    <AddToCartContext.Provider
-      value={{ cart, addToCart, removeFromCart, handleCheckout, historyCart }}
-    >
-      {" "}
-      {/* Corretto da 'hystoryCart' a 'historyCart' */}
+    <AddToCartContext.Provider value={{ cart, addToCart, removeFromCart, handleCheckout, historyCart }}> {/* Corretto da 'hystoryCart' a 'historyCart' */}
       {children}
     </AddToCartContext.Provider>
   );
