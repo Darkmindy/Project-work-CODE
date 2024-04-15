@@ -21,4 +21,6 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 - TypeScript
 - Bootstrap
 
-# Screenshot (in arrivo)
+# Screenshot
+- Login Page with Strong Auth
+![Login](public/screenshots/signup.png)
