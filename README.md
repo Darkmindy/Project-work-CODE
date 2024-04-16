@@ -25,4 +25,4 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 ## Login Page with Strong Auth
 ![Login](public/screenshots/signup.png)
 ## Admin Page
-![Login](public/screenshots/admin page.png)
+![Admin](public/screenshots/admin page.png)
