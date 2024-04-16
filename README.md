@@ -3,13 +3,13 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 
 # Features
 - Lista prodotti (carte pkmn)
-- La schermata di login del mio progetto è stata implementata con una strong authentication per garantire la sicurezza degli utenti.
+- Login Page con strong authentication per garantire la sicurezza degli utenti
 - Aggiungi al carrello
 - Rimuovi singolo prodotto dal carrello
 - Rimuovi tutti i prodotti dal carrello
 - Checkout
 - schermata di pagamento
-- dashboard (accessibile solo da Admin)
+- Admin Page
 - Post e put dei prodotti
 - Delete prodotti
 - Funzione di ricerca
@@ -25,4 +25,4 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 ## Login Page with Strong Auth
 ![Login](public/screenshots/signup.png)
 ## Admin Page
-![Admin](public/screenshots/admin page.png)
+![Admin](public/screenshots/admin-page.png)
