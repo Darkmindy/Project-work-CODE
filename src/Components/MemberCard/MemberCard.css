@@ -1,0 +1,20 @@
+.member-card {
+    border: 2px solid #ddd; /* Bordo della carta */
+    border-radius: 8px; /* Bordi arrotondati */
+    padding: 20px; /* Spaziatura interna */
+    margin-bottom: 20px; /* Margine inferiore */
+  }
+  
+  .member-card h3 {
+    margin-bottom: 8px; /* Spaziatura inferiore per il nome */
+  }
+  
+  .member-card .role {
+    font-style: italic; /* Testo in corsivo per il ruolo */
+    color: #666; /* Colore del testo per il ruolo */
+  }
+  
+  .member-card .description {
+    margin-top: 12px; /* Spaziatura superiore per la descrizione */
+  }
+  

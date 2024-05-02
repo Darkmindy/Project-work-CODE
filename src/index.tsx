@@ -13,7 +13,6 @@ import { AddToCartProvider } from "./Provider/AddToCartContext";
 import AdminPage from "./Pages/AdminPage/AdminPage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,18 +23,17 @@ const router = createBrowserRouter([
     element: <MainPage />,
   },
   {
-    path:"/cart-inside",
-    element: <CartInside/>
-  }
-  , 
+    path: "/cart-inside",
+    element: <CartInside />,
+  },
   {
     path: "/admin",
     element: <AdminPage />,
   },
   {
-    path:"/about-us",
-    element: <AboutUs/>,
-  }
+    path: "/about-us",
+    element: <AboutUs />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(
@@ -44,7 +42,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <AddToCartProvider>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </AddToCartProvider>
   </React.StrictMode>
 );

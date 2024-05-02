@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import "./Navbar.css";
 
@@ -6,14 +7,14 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-warning p-3">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
             src={process.env.PUBLIC_URL + "/images/logo.png"}
             alt="Logo"
             className="logo"
           />
           Pokémon Store
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,9 +28,9 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <NavItem title="Home" />
-            <NavItem title="About us" />
-            <NavItem title="Contacts" />
+            <NavItem title="Home" to="/" />
+            <NavItem title="About us" to="/about-us" />
+            <NavItem title="Contacts" to="/contacts" />
           </ul>
           <div className="d-flex align-items-center ms-auto">
             <div className="d-flex align-items-center">
@@ -45,12 +46,12 @@ const Navbar = () => {
   );
 };
 
-const NavItem = ({ title }: { title: string }) => {
+const NavItem = ({ title, to }: { title: string; to: string }) => {
   return (
     <li className="nav-item">
-      <a className="nav-link" href="/">
+      <Link className="nav-link" to={to}>
         {title}
-      </a>
+      </Link>
     </li>
   );
 };
