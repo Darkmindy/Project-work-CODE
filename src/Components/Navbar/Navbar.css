@@ -1,0 +1,61 @@
+/* Navbar */
+.navbar {
+    background-color: #ffc107; /* Giallo */
+    padding: 10px 20px; /* Spazio interno */
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 60px; /* Massima larghezza del logo */
+    margin-right: 20px; /* Margine destro */
+  }
+  
+  /* Pulsante Sign Up */
+  .btn-signup {
+    margin-right: 10px; /* Margine destro */
+  }
+  
+  /* Pulsante Log In */
+  .btn-login {
+    background-color: #28a745; /* Verde */
+    color: white; /* Testo bianco */
+  }
+  
+  /* Pulsante Log In:hover */
+  .btn-login:hover {
+    background-color: #218838; /* Verde scuro */
+  }
+  
+  /* Menu di navigazione */
+  .nav-item {
+    margin-right: 20px; /* Margine destro */
+  }
+  
+  /* Link del menu di navigazione */
+  .nav-link {
+    color: black; /* Testo nero */
+  }
+  
+  /* Link del menu di navigazione:hover */
+  .nav-link:hover {
+    color: #007bff; /* Blu */
+  }
+  
+  /* Carrello */
+  .cart-wrapper {
+    position: relative; /* Posizione relativa */
+    margin-left: 20px; /* Margine sinistro */
+  }
+  
+  /* Icona del carrello */
+  .cart {
+    font-size: 24px; /* Dimensione icona */
+  }
+  
+  /* Contatore del carrello */
+  .cart-container_tot {
+    position: absolute; /* Posizione assoluta */
+    top: -15px; /* Sposta verso l'alto */
+    right: -15px; /* Sposta verso destra */
+    background-color: white; 
+    }

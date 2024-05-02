@@ -1,11 +1,17 @@
 import React from "react";
 import Cart from "../Cart/Cart";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-warning p-3">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo.png"}
+            alt="Logo"
+            className="logo"
+          />
           Pokémon Store
         </a>
         <button
@@ -25,14 +31,16 @@ const Navbar = () => {
             <NavItem title="About us" />
             <NavItem title="Contacts" />
           </ul>
-          <Cart />
-          <div className="d-flex align-items-center ms-3">
-            <button className="btn btn-outline-success me-2" type="button">
-              Sign Up
-            </button>
-            <button className="btn btn-success" type="button">
-              Log In
-            </button>
+          <div className="d-flex align-items-center ms-auto">
+            <div className="d-flex align-items-center">
+              <button className="btn btn-outline-success me-2" type="button">
+                Sign Up
+              </button>
+              <button className="btn btn-success" type="button">
+                Log In
+              </button>
+            </div>
+            <Cart />
           </div>
         </div>
       </div>
@@ -43,7 +51,7 @@ const Navbar = () => {
 const NavItem = ({ title }: { title: string }) => {
   return (
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <a className="nav-link" href="/">
         {title}
       </a>
     </li>
