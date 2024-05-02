@@ -3,6 +3,8 @@
     border-radius: 8px; /* Bordi arrotondati */
     padding: 20px; /* Spaziatura interna */
     margin-bottom: 20px; /* Margine inferiore */
+    width: 300px; /* Imposta la larghezza desiderata per le card */
+    margin: 20px; /* Aggiunge un margine tra le card */
   }
   
   .member-card h3 {
@@ -17,4 +19,13 @@
   .member-card .description {
     margin-top: 12px; /* Spaziatura superiore per la descrizione */
   }
-  
+  .member-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   
+  .member-card img {
+    max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% della larghezza della card */
+    height: auto; /* Imposta l'altezza dell'immagine in modo automatico per mantenere le proporzioni */
+  }

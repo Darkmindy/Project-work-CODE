@@ -1,46 +1,30 @@
 // MemberCard.tsx
 import React from "react";
+import "./MemberCard.css"; // Importa il file CSS per gli stili della MemberCard
 
 interface MemberCardProps {
   name: string;
   role: string;
   description: string;
-  esperienza: boolean;
-  utente: boolean;
-  coinvolgente: boolean;
-  intuitiva: boolean;
+  image: string;
 }
 
 const MemberCard: React.FC<MemberCardProps> = ({
   name,
   role,
   description,
-  esperienza,
-  utente,
-  coinvolgente,
-  intuitiva,
+  image,
 }) => {
   return (
     <div className="member-card">
-      <h2>{name}</h2>
-      <p>
-        <strong>Role:</strong> {role}
-      </p>
-      <p>
-        <strong>Description:</strong> {description}
-      </p>
-      <p>
-        <strong>Esperienza:</strong> {esperienza ? "Si" : "No"}
-      </p>
-      <p>
-        <strong>Utente:</strong> {utente ? "Si" : "No"}
-      </p>
-      <p>
-        <strong>Coinvolgente:</strong> {coinvolgente ? "Si" : "No"}
-      </p>
-      <p>
-        <strong>Intuitiva:</strong> {intuitiva ? "Si" : "No"}
-      </p>
+      <div className="member-image-container">
+        <img src={image} alt={name} className="member-image" />
+      </div>
+      <div className="member-details">
+        <h2>{name}</h2>
+        <p className="role">{role}</p>
+        <p className="description">{description}</p>
+      </div>
     </div>
   );
 };
