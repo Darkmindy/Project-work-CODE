@@ -14,6 +14,7 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 - Delete prodotti
 - Funzione di ricerca
 - Salvataggio ordini
+- AboutUs Page
 
 # Stack di sviluppo
 - React
@@ -26,3 +27,7 @@ Un ringraziamento speciale a @valeny91 e @VincenzoMagnano per il loro prezioso c
 ![Login](public/screenshots/signup.png)
 ## Admin Page
 ![Admin](public/screenshots/admin-page.png)
+## About Us Page
+![About-us](public/screenshots/aboutus-page.png)
+## Product Page
+![Product-page](public/screenshots/product-page.png)
