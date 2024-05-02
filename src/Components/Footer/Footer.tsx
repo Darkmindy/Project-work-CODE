@@ -15,12 +15,18 @@ const Footer = () => {
         <p>Vincenzo, Stefania e Valentina Inc.</p>
       </div>
       <div className="iconsfooter">
-        <a href="#" className="icon-link">
+        <a href="https://www.linkedin.com" className="icon-link">
           <i className="ri-linkedin-fill"></i>
         </a>
-        <a href="#" className="icon-link">
+        <a href="https://www.facebook.com" className="icon-link">
           <i className="ri-facebook-fill"></i>
         </a>
+      </div>
+      <div className="additional-info">
+        <p>
+          Questo sito è stato creato con amore da Vincenzo, Stefania e Valentina
+          Inc. © 2024
+        </p>
       </div>
     </div>
   );
