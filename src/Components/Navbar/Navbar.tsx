@@ -36,9 +36,6 @@ const Navbar = () => {
               <button className="btn btn-outline-success me-2" type="button">
                 Sign Up
               </button>
-              <button className="btn btn-success" type="button">
-                Log In
-              </button>
             </div>
             <Cart />
           </div>
